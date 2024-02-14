@@ -1,0 +1,866 @@
+{
+	"info": {
+		"_postman_id": "2bcbe8b3-1df8-41cf-bcec-4756be93b419",
+		"name": "assessment-sassy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25164413"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "user/register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Shivam Singh 2\",\r\n    \"email\": \"shivamsingh2@gmail.com\",\r\n    \"password\": \"Shivam@9999\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/user/register",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "user/register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"Shivam Singh 2\",\r\n    \"email\": \"shivamsingh2@gmail.com\",\r\n    \"password\": \"Shivam@9999\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/user/register",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"user",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "126"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7e-2ooi/zbwJRaI2t7IbpZBaNiLLSU\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Feb 2024 06:18:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"User registered successfully\",\n    \"data\": {\n        \"username\": \"Shivam Singh 2\",\n        \"email\": \"shivamsingh2@gmail.com\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "user/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"shivamsingh4458@gmail.com\",\r\n    \"password\": \"Shivam@9999\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/user/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "user/login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"shivamsingh4458@gmail.com\",\r\n    \"password\": \"Shivam@9999\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/user/login",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"user",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "832"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"340-FO7R0we3+jeSOgHWxrxDlF2Ekr8\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Feb 2024 04:31:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"The user has been logged in successfully\",\n    \"data\": {\n        \"user\": {\n            \"_id\": \"65cc27acb090ef5005a64209\",\n            \"username\": \"Shivam Singh\",\n            \"email\": \"shivamsingh4458@gmail.com\",\n            \"password\": \"$2b$08$smxNgXna1.v09fois4NRNOo0xOyTkuibuzsmgwNWzelVFqWXkFPQm\",\n            \"createdAt\": \"2024-02-14T02:38:36.570Z\",\n            \"updatedAt\": \"2024-02-14T02:38:36.570Z\",\n            \"__v\": 0\n        },\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY1Y2MyN2FjYjA5MGVmNTAwNWE2NDIwOSIsInVzZXJuYW1lIjoiU2hpdmFtIFNpbmdoIiwiZW1haWwiOiJzaGl2YW1zaW5naDQ0NThAZ21haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMDgkc214TmdYbmExLnYwOWZvaXM0TlJOT28weE95VGt1aWJ1enNtZ3dOV3plbFZGcVdYa0ZQUW0iLCJjcmVhdGVkQXQiOiIyMDI0LTAyLTE0VDAyOjM4OjM2LjU3MFoiLCJ1cGRhdGVkQXQiOiIyMDI0LTAyLTE0VDAyOjM4OjM2LjU3MFoiLCJfX3YiOjB9LCJpYXQiOjE3MDc4ODUxMDcsImV4cCI6MTcwNzg4ODcwN30.p8MT-f3RtoZJ0QXa3AR82tRBh7zxQnD_Z_HExo93b5I\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/users",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "10",
+									"disabled": true
+								},
+								{
+									"key": "sortBy",
+									"value": "createdAt",
+									"disabled": true
+								},
+								{
+									"key": "sortOrder",
+									"value": "ASC",
+									"disabled": true
+								},
+								{
+									"key": "search",
+									"value": "2",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "users",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/users",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"users"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "limit",
+											"value": "10",
+											"disabled": true
+										},
+										{
+											"key": "sortBy",
+											"value": "createdAt",
+											"disabled": true
+										},
+										{
+											"key": "sortOrder",
+											"value": "ASC",
+											"disabled": true
+										},
+										{
+											"key": "search",
+											"value": "2",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "609"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"261-F3w4i7VtVicavHQkTnPAqftk9D4\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Feb 2024 06:32:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"All users received successfully\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"65cc5b30137e94adbf90c0f0\",\n                \"username\": \"Shivam Singh 2\",\n                \"email\": \"shivamsingh2@gmail.com\",\n                \"createdAt\": \"2024-02-14T06:18:24.888Z\",\n                \"updatedAt\": \"2024-02-14T06:18:24.888Z\"\n            },\n            {\n                \"_id\": \"65cc42974625bc29c00e1f3e\",\n                \"username\": \"Mohan Singh\",\n                \"email\": \"mohansingh4458@gmail.com\",\n                \"createdAt\": \"2024-02-14T04:33:27.522Z\",\n                \"updatedAt\": \"2024-02-14T04:33:27.522Z\"\n            },\n            {\n                \"_id\": \"65cc27acb090ef5005a64209\",\n                \"username\": \"Shivam Singh\",\n                \"email\": \"shivamsingh4458@gmail.com\",\n                \"createdAt\": \"2024-02-14T02:38:36.570Z\",\n                \"updatedAt\": \"2024-02-14T02:38:36.570Z\"\n            }\n        ],\n        \"count\": 3\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Task",
+			"item": [
+				{
+					"name": "task",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Add Help APIs\",\r\n    \"description\": \"Add Help APIs\",\r\n    \"dueDate\": \"2024-02-16T12:00:00.000Z\",\r\n    \"status\": \"NOT_COMPLETED\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/task",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"task"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "task",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"Add Help APIs\",\r\n    \"description\": \"Add Help APIs\",\r\n    \"dueDate\": \"2024-02-16T12:00:00.000Z\",\r\n    \"status\": \"NOT_COMPLETED\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/task",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"task"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "297"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"129-olAbvlgQ0PtUWr/JfP3HarCNwWc\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Feb 2024 06:22:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Task created successfully\",\n    \"data\": {\n        \"title\": \"Add Help APIs\",\n        \"description\": \"Add Help APIs\",\n        \"dueDate\": \"2024-02-16T12:00:00.000Z\",\n        \"status\": \"NOT_COMPLETED\",\n        \"_id\": \"65cc5c0b137e94adbf90c0f6\",\n        \"createdAt\": \"2024-02-14T06:22:03.067Z\",\n        \"updatedAt\": \"2024-02-14T06:22:03.067Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "task/:taskId",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Add Help APIs\",\r\n    \"description\": \"Add Help APIs\",\r\n    \"dueDate\": \"2024-02-16T12:00:00.000Z\",\r\n    \"status\": \"NOT_COMPLETED\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/task/:taskId",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"task",
+								":taskId"
+							],
+							"variable": [
+								{
+									"key": "taskId",
+									"value": "65cc5c0b137e94adbf90c0f6"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "task/:taskId",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"Add Help APIs\",\r\n    \"description\": \"Add Help APIs\",\r\n    \"dueDate\": \"2024-02-16T12:00:00.000Z\",\r\n    \"status\": \"NOT_COMPLETED\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/task/:taskId",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"task",
+										":taskId"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "65cc5c0b137e94adbf90c0f6"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "297"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"129-GoARH8X6F91e+8GY48PQ6XHxxAs\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Feb 2024 06:22:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Task updated successfully\",\n    \"data\": {\n        \"_id\": \"65cc5c0b137e94adbf90c0f6\",\n        \"title\": \"Add Help APIs\",\n        \"description\": \"Add Help APIs\",\n        \"dueDate\": \"2024-02-16T12:00:00.000Z\",\n        \"status\": \"NOT_COMPLETED\",\n        \"createdAt\": \"2024-02-14T06:22:03.067Z\",\n        \"updatedAt\": \"2024-02-14T06:22:55.361Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "task/:taskId",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/task/:taskId",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"task",
+								":taskId"
+							],
+							"variable": [
+								{
+									"key": "taskId",
+									"value": "65cc5c0b137e94adbf90c0f6"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "task/:taskId",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/task/:taskId",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"task",
+										":taskId"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "65cc5c0b137e94adbf90c0f6"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "297"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"129-3qlvNdPyP3HsS90dqkL7ct8G+nI\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Feb 2024 06:25:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Task deleted successfully\",\n    \"data\": {\n        \"_id\": \"65cc5c0b137e94adbf90c0f6\",\n        \"title\": \"Add Help APIs\",\n        \"description\": \"Add Help APIs\",\n        \"dueDate\": \"2024-02-16T12:00:00.000Z\",\n        \"status\": \"NOT_COMPLETED\",\n        \"createdAt\": \"2024-02-14T06:22:03.067Z\",\n        \"updatedAt\": \"2024-02-14T06:22:55.361Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "task/:taskId",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/task/:taskId",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"task",
+								":taskId"
+							],
+							"variable": [
+								{
+									"key": "taskId",
+									"value": "65cc5c0b137e94adbf90c0f6"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "task/:taskId",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/task/:taskId",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"task",
+										":taskId"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "65cc5c0b137e94adbf90c0f6"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "298"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"12a-qoI+Jc+4bEUyCjt5xwb18Xam8LQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Feb 2024 06:24:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Task received successfully\",\n    \"data\": {\n        \"_id\": \"65cc5c0b137e94adbf90c0f6\",\n        \"title\": \"Add Help APIs\",\n        \"description\": \"Add Help APIs\",\n        \"dueDate\": \"2024-02-16T12:00:00.000Z\",\n        \"status\": \"NOT_COMPLETED\",\n        \"createdAt\": \"2024-02-14T06:22:03.067Z\",\n        \"updatedAt\": \"2024-02-14T06:22:55.361Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "tasks",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/tasks?page=1&limit=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"tasks"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "sortBy",
+									"value": "createdAt",
+									"disabled": true
+								},
+								{
+									"key": "sortOrder",
+									"value": "DESC",
+									"disabled": true
+								},
+								{
+									"key": "search",
+									"value": "Add Task APIs",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "tasks/tasks",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/tasks?page=1&limit=10",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"tasks"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "10"
+										},
+										{
+											"key": "sortBy",
+											"value": "createdAt",
+											"disabled": true
+										},
+										{
+											"key": "sortOrder",
+											"value": "DESC",
+											"disabled": true
+										},
+										{
+											"key": "search",
+											"value": "Add Task APIs",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1230"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4ce-M2wOvuS4xNTHWt1OpcXlXOZ8ZIM\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Feb 2024 06:25:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"All tasks received successfully\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"65cc5c0b137e94adbf90c0f6\",\n                \"title\": \"Add Help APIs\",\n                \"description\": \"Add Help APIs\",\n                \"dueDate\": \"2024-02-16T12:00:00.000Z\",\n                \"status\": \"NOT_COMPLETED\",\n                \"createdAt\": \"2024-02-14T06:22:03.067Z\",\n                \"updatedAt\": \"2024-02-14T06:22:55.361Z\"\n            },\n            {\n                \"_id\": \"65cc27f8b090ef5005a64213\",\n                \"title\": \"Add Task APIs\",\n                \"description\": \"Add Task APIs\",\n                \"dueDate\": \"2024-02-16T12:00:00.000Z\",\n                \"status\": \"NOT_COMPLETED\",\n                \"createdAt\": \"2024-02-14T02:39:52.668Z\",\n                \"updatedAt\": \"2024-02-14T02:39:52.668Z\"\n            },\n            {\n                \"_id\": \"65cc27ecb090ef5005a64211\",\n                \"title\": \"Add User APIs\",\n                \"description\": \"Add User APIs\",\n                \"dueDate\": \"2024-02-16T12:00:00.000Z\",\n                \"status\": \"NOT_COMPLETED\",\n                \"createdAt\": \"2024-02-14T02:39:40.640Z\",\n                \"updatedAt\": \"2024-02-14T02:39:40.640Z\"\n            },\n            {\n                \"_id\": \"65cc27dab090ef5005a6420f\",\n                \"title\": \"Add Post APIs\",\n                \"description\": \"Add Post APIs\",\n                \"dueDate\": \"2024-02-16T12:00:00.000Z\",\n                \"status\": \"NOT_COMPLETED\",\n                \"createdAt\": \"2024-02-14T02:39:22.017Z\",\n                \"updatedAt\": \"2024-02-14T02:39:22.017Z\"\n            },\n            {\n                \"_id\": \"65cc27c9b090ef5005a6420d\",\n                \"title\": \"Add Get APIs\",\n                \"description\": \"Add Get APIs\",\n                \"dueDate\": \"2024-02-15T12:00:00.000Z\",\n                \"status\": \"NOT_COMPLETED\",\n                \"createdAt\": \"2024-02-14T02:39:05.255Z\",\n                \"updatedAt\": \"2024-02-14T02:39:05.255Z\"\n            }\n        ],\n        \"count\": 5\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
